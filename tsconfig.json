@@ -7,6 +7,19 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "exactOptionalPropertyTypes": true,   // optional props behave like real union with undefined
+    "noUncheckedIndexedAccess": true,     // array[index] becomes T | undefined
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitOverride": true,           // subclass must write `override` keyword
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
