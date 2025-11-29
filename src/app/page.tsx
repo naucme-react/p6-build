@@ -1,4 +1,5 @@
 import Form from "../components/form/form";
+import { List } from "../components/list/list";
 import { db } from "../lib/db";
 import { tasks } from "../lib/db/schema";
 
@@ -7,11 +8,7 @@ export default async function Home() {
   return (
     <div>
       <Form />
-      <table className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-        {rows.map((row) => <tr key={row.id}>
-          <td>{row.title}</td>
-        </tr>)}
-      </table>
+      <List items={rows} />
     </div>
   );
 }
